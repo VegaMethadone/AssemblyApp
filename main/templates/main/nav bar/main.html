@@ -1,0 +1,153 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/css_for_districts.css' %}">
+    <link rel="stylesheet" href="{% static 'main/js/main.js' %}">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Main Page</title>
+</head>
+<body>
+  <header>
+      <div class="sidebar close">
+          <div class="logo-details">
+              <i class='bx bx-cube'></i>
+              <span class="logo_name">Политология</span>
+          </div>
+          <ul class="nav-links">
+              <li>
+                <a href="technologies">
+                    <i class='bx bx-atom'></i>
+                    <span class="link_name">Технологии</span>
+                </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="technologies">Технологии </a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="iocn-link">
+                      <a href="#">
+                          <i class='bx bx-anchor'></i>
+                          <span class="link_name">Питер</span>
+                      </a>
+                      <i class='bx bxs-chevron-down arrow'></i>
+                  </div>
+                  <ul class="sub-menu">
+                      <li><a class="link_name" href="#">Санкт-Петербург</a></li>
+                      <li><a href="saintP_income">Доходы</a></li>
+                      <li><a href="saintP_left">Расходы</a></li>
+                      <li><a href="saintP_general">Общее</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="iocn-link">
+                      <a href="#">
+                          <i class='bx bx-home'></i>
+                          <span class="link_name">Район</span>
+                      </a>
+                      <i class='bx bxs-chevron-down arrow'></i>
+                  </div>
+                  <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Муниципалитет</a></li>
+                    <li><a href="admiralty_plan">Адмиралтейский</a></li>
+                    <li><a href="vyborgsky_plan">Выборгский</a></li>
+                    <li><a href="kalininsky_plan">Калининский</a></li>
+                    <li><a href="kirovsky_plan">Кировский</a></li>
+                    <li><a href="kolpinsky_plan">Колпинский</a></li>
+                    <li><a href="krasnogvardeysky_plan">Красногвардейский</a></li>
+                    <li><a href="resort_plan">Курортный</a></li>
+                    <li><a href="moscowsky_plan">Московский</a></li>
+                    <li><a href="petrogradsky_plan">Петроградский</a></li>
+                    <li><a href="primorsky_plan">Приморский</a></li>
+                    <li><a href="frunzensky_plan">Фрунзенский</a></li>
+                    <li><a href="central_plan">Центральный</a></li>
+                  </ul>
+              </li>
+              
+              <li>
+                  <div class="iocn-link">
+                      <a href="#">
+                          <i class='bx bx-line-chart'></i>
+                          <span class="link_name">Общее</span>
+                      </a>
+                      <i class='bx bxs-chevron-down arrow'></i>
+                  </div>
+                  <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Аналитика</a></li>
+                    <li><a href="interdistrict">Межрайонная</a></li>
+                    
+                  </ul>
+              </li>
+              <li>
+                  <a href="map">
+                      <i class='bx bx-map'></i>
+                      <span class="link_name">Карта</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="map">Карта</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="profile-details">
+                      <div class="profile-content">
+                          <img src="{% static 'main/img/site_logo1.png' %}" alt="profileImg">
+                      </div>
+                      <div class="name-job">
+                          <div class="profile_name">СЗИУ РАНХиГС</div>
+                          <div class="job">Северо-Западный институт</div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <section class="home-section">
+          <div class="home-content">
+              <i class='bx bx-menu'></i>
+              <span class="text"></span>
+          </div>
+      </section>
+      <script>
+
+          let arrow = document.querySelectorAll(".arrow");
+          for (var i = 0; i < arrow.length; i++) {
+              arrow[i].addEventListener("click", (e) => {
+                  let arrowParent = e.target.parentElement.parentElement;
+                  arrowParent.classList.toggle("showMenu");
+              });    /* я щас сдохну */
+          }
+          let sidebar = document.querySelector(".sidebar");
+          let sidebarBtn = document.querySelector(".bx-menu");
+          console.log(sidebarBtn);
+          sidebarBtn.addEventListener("click", () => {
+              sidebar.classList.toggle("close");
+          });
+
+      </script>
+  </header>
+    
+  {% block content %}
+
+  
+    {% endblock %}
+
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <script src="{% static 'main/js/main.js' %}"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+ <!-- чеккк-->
+</body>
+</html>

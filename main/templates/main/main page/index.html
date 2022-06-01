@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap" rel="stylesheet">
+    <title>Home</title>
+  </head>
+
+  <header class="header">
+    <div class="container">
+        <div class="header_inner">
+          <div class="logo">Политология</div>
+
+          <nav class="nav">
+            <a class="nav_link" href="#team_link">Команда</a>
+            <a class="nav_link" href="#faculty">Факультет</a>
+            <a class="nav_link" href="#more">Проект</a>
+            <a class="nav_link" href="#contacts">Контакты</a>
+          </nav>
+        </div>
+
+    </div>
+  </header>
+
+  <body>
+<div class="intro">
+    <div class="container">
+      <div class="intro_inner">
+          <h2 class="intro_suptitle">Санкт-Петербург</h2>
+          <h1 class="intro_title">Муниципальная статистика</h1>
+
+          <a  class="btn" href="#more">Узнать больше</a>
+      </div>
+    </div>
+
+      <div class="slider">
+            <div class="container">
+              <div class="slider_inner">
+
+                  <div class="slider_item">Учись</div>
+                  <div class="slider_item">Мечтай</div>
+                  <div class="slider_item">Твори</div>
+                  <div class="slider_item">Созидай</div>
+              </div>
+            </div>
+      </div>
+</div>
+
+<section id="team_link" class="section">
+      <div class="container">
+            <div class="section_header">
+                  <h3 class="section_suptitle">Команда</h3>
+                  <h2 class="section_title">Выбор проекта</h2>
+                  <div class="section_text">
+                    <p>Наша команда состоит из двух студентов последнего курса бакалавариата, научного руководителя и двух кураторов.
+                      Данный проект был придуман как выпускная квалификационная работа по направлению:
+                     "Политология". Так как политология представляет из себя сферу взаимоотношений граждан
+                      и государственно-политических структур и организаций, было принято решение нашей командой
+                        сделать проект в сфере обработки и визуализации данных муниципальных образований города Санкт-Петербург.
+                        </p>
+                  </div>
+            </div>
+
+            <div class="about">
+                    <div class="about_item">
+                        <div class="about_img">
+                            <img class="img_img" src="{% static 'main/img/team1.png' %}" alt="" width="300" height="300">
+                            <div class="text_about_team">
+                              <h2 class="style_text_about_team1">Горохов В. А.<p class="style_text_about_team2">Директор образовательной программы, Доцент, Кандидат политических наук</p></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_item">
+                      <div class="about_img">
+                          <img class="img_img" src="{% static 'main/img/team4.png' %}" alt="" width="300" height="300">
+                          <div class="text_about_team">
+                            <h2 class="style_text_about_team1">Гордеев А. Ю. <p class="style_text_about_team2">Студент 4 курса, бакалавариата политологии</p></h2>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="about_item">
+                      <div class="about_img">
+                          <img class="img_img" src="{% static 'main/img/team3.png' %}" alt="" width="300" height="300">
+                          <div class="text_about_team">
+                            <h2 class="style_text_about_team1">Шалаев Н. Е.<p class="style_text_about_team2">Доцент, Кандидат политических наук</p></h2>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="about_item">
+                      <div class="about_img">
+                          <img class="img_img" src="{% static 'main/img/team5.png' %}" width="300" height="300">
+                            <div class="text_about_team">
+                              <h2 class="style_text_about_team1">Марченко А. П.<p class="style_text_about_team2">Студент 4 курса, бакалавариата политологии</p></h2>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="about_item">
+                      <div class="about_img">
+                          <img class="img_img" src="{% static 'main/img/team2.png' %}" alt="" width="300" height="300">
+                          <div class="text_about_team">
+                            <h2 class="style_text_about_team1">Тарусина И. Г.<p class="style_text_about_team2">Заведующая кафедрой, Кандидат политических наук</p></h2>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+
+
+      </div>
+
+      <div class="reviews">
+          <div class="container">
+
+              <div class="reviews_item">
+                      <div class="reviews_photo">
+                          <img class="reviews_img"src="{% static 'main/img/e_ros.jpg' %}" alt="">
+                      </div>
+                    <div class="reviews_content">
+                        <div class="reviews_text">"Сегодня отказы - это рутина.
+                           Их гораздо больше, чем достижений. Понимая,
+                           что в твоей жизни будет гораздо больше отказов,
+                           чем достижений, надо научиться правильно на них
+                           смотреть".</div>
+                           <div class="reviews_author">Рощин Евгений Николаевич, Декан факультета ФМОПИ</div>
+                    </div>
+              </div>
+
+          </div> <!--container-->
+      </div> <!--reviews-->
+
+
+</section>
+
+
+<section id="faculty" class="section">
+      <div class="container">
+        <div class="section_header">
+              <h3 class="section_suptitle">Наш</h3>
+              <h2 class="section_title">Факультет</h2>
+              <div class="section_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+              </div>
+        </div>
+        <div class="container2">
+              <div class="about_2">
+                  <div class="about_item2">
+                      <div class="about_img2">
+                          <img class="f_img" src="{% static 'main/img/f1.jpg' %}" alt="">
+                      </div>
+                  </div>
+                  <div class="about_item2">
+                      <div class="about_img2">
+                          <img class="f_img" src="{% static 'main/img/f2.png' %}" alt="">
+                      </div>
+                  </div>
+                  <div class="about_item2">
+                      <div class="about_img2">
+                          <img class="f_img" src="{% static 'main/img/f3.jpg' %}" alt="">
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+</section>
+
+<section id="more" class="section2">
+  <div class="intro2">
+    <div class="container3">
+        <div class="project_description">
+            <div class="project_content">
+                <h3 class="section_suptitle2">Проект</h3>
+                <h2 class="section_title2">Описание</h2>
+                <div class="section_text2"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p> </div>
+                  <a  class="btn_2" href="central_plan">Узнать больше</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer id="contacts" class="footer">
+  <div class="container">
+    <div class="footer_inner">
+      <div class="footer_block">
+          <h4 class="footer_title"><b>Местоположение</b></h4>
+            <a class="link_ranepa"href="https://spb.ranepa.ru"> <p class="footer_text_style"> Россия, Санкт-Петербург,</p>
+              <p class="footer_text_style">ПИ: Средний проспект В.О., 57/43.</P> <p class="footer_text_style">ФМО: Тучков переулок, д. 7</P> <p class="footer_text_style">199178</p></a>
+      </div>
+          <div class="footer_block">
+              <h4 class="footer_title"><b>Контакты</b></h4>
+                  <p class="footer_text_style">E-mail: fmopi-sziu@ranepa.ru</P>
+                    <p class="footer_text_style">Телефон: +7 (812) 740-59-72</P>
+          </div>
+          <div class="footer_block">
+              <h4 class="footer_title"><b>Соц. сети</b></h4>
+                  <a  href="https://vk.com/fmopisziu"> <img class="social_networ" src="{% static 'main/img/vk.png' %}" alt=""> </a>
+                  <a  href="https://instagram.com/fmopifam?utm_medium=copy_link">
+                  <img class="social_networ" src="{% static 'main/img/inst.png' %}" alt=""> </a>
+          </div>
+          <div class="footer_block_2">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5818.220470246398!2d30.26439991800401!3d59.94058250900849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631288dd679b9%3A0x26003ead13f8201f!2z0KHQtdCy0LXRgNC-LdCX0LDQv9Cw0LTQvdGL0Lkg0LjQvdGB0YLQuNGC0YPRgiDRg9C_0YDQsNCy0LvQtdC90LjRjyDQoNCQ0J3QpdC40JPQoQ!5e0!3m2!1sru!2sru!4v1636673696870!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+    </div>
+  </div>
+  <div class="footer_ranepa">
+        <div class="container">
+              <div class="ranepa_text">
+                <div>Северо-Западный институт управления РАНХиГС – крупнейший региональный кампус Президентской академии.</div>
+                 <div>Вуз предоставляет образование, соответствующее международным стандартам, использует современные формы и ведущие методы обучения.</div>
+              </div>
+        </div>
+  </div>
+
+</footer>
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- main/static/main/img/mainimg -->
+
+
