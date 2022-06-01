@@ -1,0 +1,32 @@
+body {
+    
+    box-sizing: border-box;
+    padding: 0px;
+    
+
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+    margin: auto;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box {
+    height: auto;
+    max-width: 550px;
+
+    margin: auto;
+    margin-top: 15px;
+    justify-content: space-around;
+    background-color:antiquewhite;
+
+}
